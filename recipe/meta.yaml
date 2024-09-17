@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://github.com/itchyny/{{ name }}
-  git_rev: v{{ version }}
+  url: https://github.com/itchyny/gojq/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 80365ef7dd7935296d42b98c79b51723a01d3c332501098485bebb4b9a89eb13
 
 build:
   number: 0
