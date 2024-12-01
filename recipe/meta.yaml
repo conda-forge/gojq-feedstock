@@ -1,5 +1,5 @@
 {% set name = "gojq" %}
-{% set version = "0.12.16" %}
+{% set version = "0.12.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/itchyny/gojq/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 80365ef7dd7935296d42b98c79b51723a01d3c332501098485bebb4b9a89eb13
+  sha256: 86b8393d04cb40db09a8de96199f358c1e49bbd7d1ace5c95496cc7cc4102b3b
 
 build:
   number: 0
