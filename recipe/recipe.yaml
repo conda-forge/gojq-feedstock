@@ -1,0 +1,37 @@
+schema_version: 1
+
+context:
+  version: 0.12.17
+
+package:
+  name: gojq
+  version: ${{ version }}
+
+source:
+  url: https://github.com/itchyny/gojq/archive/refs/tags/v${{ version }}.tar.gz
+  sha256: 86b8393d04cb40db09a8de96199f358c1e49bbd7d1ace5c95496cc7cc4102b3b
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - ${{ compiler('go-nocgo') }}
+    - go-licenses
+
+tests:
+  - script:
+      - gojq --help
+
+about:
+  license: MIT
+  license_file:
+    - LICENSE
+    - license-files/
+  summary: Pure Go implementation of jq
+  homepage: https://github.com/itchyny/gojq
+  repository: https://github.com/itchyny/gojq
+
+extra:
+  recipe-maintainers:
+    - danielnachun
