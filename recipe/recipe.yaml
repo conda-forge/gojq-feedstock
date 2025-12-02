@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.12.17
+  version: "0.12.18"
 
 package:
   name: gojq
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://github.com/itchyny/gojq/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 86b8393d04cb40db09a8de96199f358c1e49bbd7d1ace5c95496cc7cc4102b3b
+  sha256: 8a228e4feab900f45db14bde147e8c6f820ec2413631b932e3c15bc1f0545995
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
